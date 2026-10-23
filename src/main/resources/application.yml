@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: inventory-service
+  config:
+    import: optional:classpath:application-local.yml
+  datasource:
+      url: jdbc:postgresql://localhost:5432/inventory_db
+  jpa:
+      open-in-view: false
+      show-sql: true
+      hibernate:
+        ddl-auto: none
